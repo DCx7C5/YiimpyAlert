@@ -3,7 +3,15 @@ Get alert-, block- or  wallet-notifications on your smartphone in realtime.
 
 Example wallet.conf:
 
-alertnotify=echo %s | python3 yiimpyalert.py
+`alertnotify=echo %s | python3 yiimpyalert.py`
+
+or 
+
+`blocknotify=blocknotify coinminingpool.org:3433 2105 %s && echo %s | python3 yiimpyalert.py`
+
+Like this the script does not have any effect on blocknotifying speed.
+
+
 
 ATTENTION:
 
