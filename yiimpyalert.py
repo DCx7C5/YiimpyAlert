@@ -1,16 +1,14 @@
 import sys
-import subprocess
-try:
-    from telegram.bot import Bot
-except ModuleNotFoundError:
-    subprocess.call(["pip3", "install", "-U", "python-telegram-bot"])
-    from telegram.bot import Bot
+import requests
 
-#  your own Telegram User ID 
-USERID = 12345678 
+
+#  your own Telegram User ID
+USERID = 1323422423
 
 #  create your own Bot with @Botfather and paste API token
-APITOKEN = "323453535:AAASDSAD_zZloS426655kuFQe3vMEQIky5SGo" 
+APITOKEN = "312323231:AAE6zTu5A5okjSXfu6MMLb19HIGPq6GUv9k"
 
-bot = Bot(APITOKEN)
-bot.send_message(chat_id=USERID, text=str(sys.stdin.read()))
+requests.get("https://api.telegram.org/bot{}/sendMessage?chat_id={}&text={}".format(APITOKEN,
+                                                                                    USERID,
+                                                                                    str(sys.stdin.read())))
+
