@@ -14,3 +14,4 @@ requests.get("https://api.telegram.org/bot{}/sendMessage?chat_id={}&text={}".for
                                                                                     str(sys.stdin.read())))
 #  UNCOMMENT the following line if you like it nostalgic - and add your mail address
 #subprocess.call(["echo", "%s", "|", "mail", "-s", "'<COIN> alert!'", "<YOUR MAIL ADDRESS>"])
+
