@@ -10,10 +10,6 @@ or
 `walletnotify=echo %s | python3 yiimpyalert.py`
 
 
-Like this the script does not have any effect on blocknotifying speed.
-
-
-
 ATTENTION:
 
 Commands can only be send when piped with echo, etc.
