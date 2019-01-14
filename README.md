@@ -7,7 +7,8 @@ Example wallet.conf:
 
 or 
 
-`blocknotify=blocknotify coinminingpool.org:3433 2105 %s && echo %s | python3 yiimpyalert.py`
+`walletnotify=echo %s | python3 yiimpyalert.py`
+
 
 Like this the script does not have any effect on blocknotifying speed.
 
