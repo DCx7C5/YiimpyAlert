@@ -14,4 +14,4 @@ ATTENTION:
 
 Commands can only be send when piped with echo, etc.
 
-Don't use them as a parameter, like: yiimpyalert.py %s | create a pipe
+Don't use them as a parameter, like: `yiimpyalert.py %s | create a pipe
